@@ -1,0 +1,13 @@
+**/*.svg
+package.json
+/lib
+/node_modules
+/dist
+.DS_Store
+.gitignore
+LICENSE
+.eslintcache
+*.lock
+.history
+/coverage
+.husky

@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* base options */
+    "target": "ES5", //编译后的版本
+    "baseUrl": ".",
+    "outDir": "dist", //输出目录
+    "module": "NodeNext", //使用的模块标准
+    "lib": ["esnext", "dom", "dom.iterable"], //
+    "allowJs": true, //允许使用js
+    "checkJs": true, //检查js文件错误
+    "removeComments": true, //编译后是否删除注释
+
+    "declaration": true,
+    "declarationDir": "dist/types",
+
+    "jsx": "preserve",
+
+    //checking
+    "strict": true, //开启严格模式
+    "noImplicitAny": false,
+
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+
+    "paths": {
+      "components/*": ["src/components/*"],
+      "utils/*": ["src/utils/*"],
+      "shared/*": ["src/shared/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist", "src/__test__"]
+}
